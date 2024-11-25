@@ -9,18 +9,17 @@ def index():
 def model():
     return render_template('model.html')
 
-@app.route("/viewdata")
+@app.route("/viewdata.html")
 def viewdata():
     return render_template('viewdata.html')
 
-@app.route("/viewbag")
+@app.route("/viewbag.html")
 def viewbag():
     return render_template('viewbag.html')
 
-@app.route("/serviceinjection")
+@app.route("/serviceinjection.html")
 def serviceinjection():
     return render_template('serviceinjection.html')
-
 
 if __name__=="__main__":
     app.run(debug=True)
